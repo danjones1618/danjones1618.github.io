@@ -1,15 +1,13 @@
-*{
-  margin: 0;
-  padding: 0;
-}
-
 html, body{
   width: 100%;
   height: 100%;
-  /*background-color: #EFE6E6;*/
-  background-color: #ffffff;
+  padding: 0;
+  margin: 0;
+  background-color: #EFE6E6;
   font-family: 'Roboto', sans-serif;
   color: #333333;
+  scroll-snap-type: mandatory;
+  scroll-snap-points-y: repeat(100%);
 }
 
 #page-header{
@@ -37,16 +35,17 @@ html, body{
   justify-self: center;
 }
 
-#header-scroll{
+.next-btn{
   position: absolute;
   bottom: 50px;
   left: calc(50% - 15px);
   width: 30px;
   height: 30px;
   text-align: center;
-  line-height: 30px;
+  line-height: 30px !important;
   animation: bob 1.8s infinite ease-in-out alternate;
   box-shadow: 1.5px 3px 3px 0px #1e1e1e;
+  font-size: 16px;
 }
 
 
@@ -62,20 +61,25 @@ html, body{
 
 article{
   background-color: #ffffff;
-  width: calc(95% - 50px);
-  margin-left: 2.5%;
-  border-bottom: 1px solid #333333;
-  padding: 5px 25px;
+  width: calc(100% - 25%);
+  height: calc(100% - 0px);
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  padding: 0px 12.5% 0 12.5%;
+  font-size: 24px;
+  position: relative;
+}
+
+article>header{
+  font-size: 64px;
+  font-weight: bold;
+  justify-self: center;
 }
 
 article:nth-child(odd){
   background-color: #4d4d4d;
   color: #ffffff;
-}
-
-article>header{
-  font-size: 24px;
-  font-weight: bold;
 }
 
 article:nth-child(5n+1)>header>span{color: #6CE0F1;}
