@@ -12,6 +12,10 @@ html, body{
   color: #333333;
 }
 
+ul, ol{
+  margin-left: 40px;
+}
+
 #page-header{
   display: grid;
   height: 100%;
@@ -63,9 +67,9 @@ html, body{
 article{
   background-color: #ffffff;
   width: calc(95% - 50px);
-  margin-left: 2.5%;
+  /*margin-left: 2.5%;*/
   border-bottom: 1px solid #333333;
-  padding: 5px 25px;
+  padding: 5px calc(2.5% + 25px);
 }
 
 article:nth-child(odd){
@@ -74,7 +78,7 @@ article:nth-child(odd){
 }
 
 article>header{
-  font-size: 24px;
+  font-size: 30px;
   font-weight: bold;
 }
 
