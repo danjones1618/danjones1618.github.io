@@ -69,7 +69,7 @@ article{
   width: calc(95% - 50px);
   /*margin-left: 2.5%;*/
   border-bottom: 1px solid #333333;
-  padding: 5px calc(2.5% + 25px);
+  padding: 5px calc(2.5% + 25px) 25px calc(2.5% + 25px);
 }
 
 article:nth-child(odd){
