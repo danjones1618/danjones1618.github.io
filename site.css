@@ -112,3 +112,14 @@ article:nth-child(5n+5)>header>span{color: #D3A4F9;}
     transform: translateY(10px);
   }
 }
+
+#socials>main{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#socials a{
+  font-size: 48px;
+  text-decoration: none;
+  color: inherit;
+}
