@@ -94,18 +94,21 @@ article:nth-child(5n+5)>header>span{color: #D3A4F9;}
 
 .button{
   background-color: #ffffff;
-  color: #000000;
+  color: #4d4d4d;
   text-decoration: none;
 }
 
-.button:hover{background-color: #fefefe;}
+.button:hover{
+  background-color: #4d4d4d !important;
+  color: #ffffff !important;
+}
 article:nth-child(odd) .button:hover{
-  background-color: #ffffff;
-  color: #4d4d4d;
+  background-color: #ffffff !important;
+  color: #4d4d4d !important;
 }
 article:nth-child(even) .button:hover{
-  background-color: #4d4d4d;
-  color: #ffffff;
+  background-color: #4d4d4d !important;
+  color: #ffffff !important;
 }
 
 .button:nth-child(5n+1){background-color: #6CE0F1;}
