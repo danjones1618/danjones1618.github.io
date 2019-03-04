@@ -98,8 +98,14 @@ article:nth-child(5n+5)>header>span{color: #D3A4F9;}
   text-decoration: none;
 }
 
-.button::hover{
-  background-color: #fefefe;
+.button:hover{background-color: #fefefe;}
+article:nth-child(odd) .button:hover{
+  background-color: #ffffff;
+  color: #4d4d4d;
+}
+article:nth-child(even) .button:hover{
+  background-color: #4d4d4d;
+  color: #ffffff;
 }
 
 .button:nth-child(5n+1){background-color: #6CE0F1;}
