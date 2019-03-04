@@ -93,7 +93,16 @@ article:nth-child(5n+5)>header>span{color: #D3A4F9;}
   background-color: #ffffff;
   color: #000000;
   text-decoration: none;
+  padding: 10px 20px;
 }
+
+article:nth-child(5n+1) .button{background-color: #6CE0F1;}
+article:nth-child(5n+2) .button{background-color: #FB4485;}
+article:nth-child(5n+3) .button{background-color: #FDA333;}
+article:nth-child(5n+4) .button{background-color: #C2E15F;}
+article:nth-child(5n+5) .button{background-color: #D3A4F9;}
+
+
 
 .button::hover{
   background-color: #fefefe;
