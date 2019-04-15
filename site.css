@@ -67,6 +67,20 @@ ul, ol{
   font-weight:100;
 }
 
+/*Phones*/
+@media screen and (min-width: 0px) and (max-width:750px){
+  article{
+    width: calc(95% - 50px);
+    padding: 5px calc(2.5% + 25px) 25px calc(2.5% + 25px);
+  }
+}
+/*Laptop*/
+@media screen and (min-width:1200px) and (max-width:1600px){
+  article{
+    width: calc(80% - 50px);
+    padding: 5px calc(2.5% + 25px) 25px calc(2.5% + 25px);
+  }
+}
 article{
   background-color: #ffffff;
   width: calc(95% - 50px);
