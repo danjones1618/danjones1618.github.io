@@ -150,7 +150,7 @@ article:nth-child(even) .button:hover{
   display: grid;
   grid-row-gap: 15px;
   grid-column-gap: 25px;
-  margin: 10px 25px;
+  margin: 25px 25px;
 }
 
 /*Phones*/
