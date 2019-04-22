@@ -9,7 +9,7 @@ html, body{
   /*background-color: #EFE6E6;*/
   background-color: #ffffff;
   font-family: 'Roboto', sans-serif;
-  color: #333333;
+  color: #4d4d4d;
 }
 
 ul, ol{
@@ -143,6 +143,41 @@ article:nth-child(even) .button:hover{
   100%{
     transform: translateY(10px);
   }
+}
+
+/*################# About section #################*/
+#about-icons{
+  display: grid;
+  grid-row-gap: 15px;
+  grid-column-gap: 25px;
+  margin: 10px 25px;
+}
+
+/*Phones*/
+@media screen and (min-width: 0px) and (max-width:600px){
+  #about-icons{
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, calc(48px + 15px) auto);
+  }
+  #about-icons i{align-self: end;}
+}
+/*Laptop*/
+@media screen and (min-width:600px){
+  #about-icons{
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 48px auto;
+  } 
+  #about-icons i{grid-row: 1;}
+}
+
+#about-icons i{
+  justify-self: center;
+  font-size: 48px;
+}
+
+#about-icons p{
+  justify-self: stretch;
+  text-align: center;
 }
 
 #socials>main{
