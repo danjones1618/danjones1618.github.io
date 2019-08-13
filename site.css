@@ -4,8 +4,8 @@
 }
 
 html, body{
-  width: 100%;
-  height: 100%;
+  width: 1vw;
+  height: 1vh;
   /*background-color: #EFE6E6;*/
   background-color: #ffffff;
   font-family: 'Roboto', sans-serif;
