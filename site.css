@@ -36,7 +36,15 @@ ul, ol{
   background-color: var(--darkgray);
   color: var(--white);
   font-family: "Raleway", sans-serif;
+  background: url('assets/bgxl.jpg') no-repeat center center fixed;
+  background-size: cover;
 }
+
+/*
+@media screen and (min-width: 600px){#page-header{background-image: url('assets/bgm.jpg');}
+@media screen and (min-width:1000px){#page-header{background-image: url('assets/bgl.jpg');}
+@media screen and (min-width:1800px){#page-header{background-image: url('assets/bgxl.jpg');}
+*/
 
 #page-header-contacts{
   text-align: center;
