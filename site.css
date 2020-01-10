@@ -33,11 +33,10 @@ ul, ol{
   width: 100%;
   justify-content: center;
   align-content: center;
-  background-color: var(--darkgray);
   color: var(--white);
   font-family: "Raleway", sans-serif;
   background: url('assets/bgxl.jpg') no-repeat center center fixed;
-  background-size: cover;
+  background: var(--darkgray) url('assets/bgxl.jpg') no-repeat center/cover fixed;
 }
 
 /*
