@@ -35,7 +35,6 @@ ul, ol{
   align-content: center;
   color: var(--white);
   font-family: "Raleway", sans-serif;
-  background: url('assets/bgxl.jpg') no-repeat center center fixed;
   background: var(--darkgray) url('assets/bgxl.jpg') no-repeat center/cover fixed;
 }
 
