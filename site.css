@@ -34,7 +34,7 @@ ul, ol{
   justify-content: center;
   align-content: center;
   color: var(--white);
-  font-family: "Raleway", sans-serif;
+  font-family: "Cormorant SC", sans-serif;
   background: var(--darkgray) url('assets/bgxl.jpg') no-repeat center/cover fixed;
 }
 
@@ -46,25 +46,35 @@ ul, ol{
 
 #page-header-contacts{
   text-align: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0.5rem;
 }
 
 #page-header-contacts a{
   color: var(--white);
   text-decoration: none;
+  margin: 0 1rem;
+  font-size: 1rem;
 }
 
 #name{
-  font-size: 64px;
+  font-size: 5rem;
   justify-self: center;
+  font-weight: 600;
 }
 
 #name>span{
-  font-weight: 100;
+  font-weight: 300;
 }
 
 #position{
-  font-size:22px;
+  font-size: 1.5rem;
   font-weight: 100;
+  font-family: "Cormorant Infant", sans-serif;
+  font-style: italic;
   justify-self: center;
 }
 
