@@ -1,0 +1,62 @@
+.Carosell {
+  justify-content: stretch;
+  align-content: stretch;
+  position: relative;
+}
+
+.Carosell-slides {
+  position: absolute;
+  bottom: 1rem;
+  right: 2rem;
+  z-index: 5;
+  color: var(--white);
+  font-size: 1.25rem;
+  cursor: pointer;
+}
+
+.Carosell-slides > * {
+  margin-left: 0.5rem;
+}
+
+.Slide {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  padding: 2rem;
+  background: var(--darkgray) no-repeat center/cover fixed;
+}
+
+.active-slide-enter {
+  opacity: 0;
+}
+
+.active-slide-enter-active {
+  opacity: 1;
+  transition: all 1.5s ease;
+}
+
+.active-slide-exit {
+  z-index: -1;
+  opacity: 1;
+}
+
+.active-slide-exit-active {
+  opacity: 0;
+  transition: all 1.5s ease 1.5s;
+}
+
+.Slide .Slide-text:first-child {
+  font-size: 3rem;
+}
+
+.Slide-text {
+  color: var(--white);
+  text-align: center;
+  font-size: 1.5rem;
+}
