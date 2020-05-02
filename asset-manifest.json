@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/static/css/main.f20ca3e4.chunk.css",
+    "main.js": "/static/js/main.57c53aaa.chunk.js",
+    "main.js.map": "/static/js/main.57c53aaa.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.05d509f8.js",
+    "runtime-main.js.map": "/static/js/runtime-main.05d509f8.js.map",
+    "static/js/2.488af163.chunk.js": "/static/js/2.488af163.chunk.js",
+    "static/js/2.488af163.chunk.js.map": "/static/js/2.488af163.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.5e56da18309c33a37965e1b2ab6d291d.js": "/precache-manifest.5e56da18309c33a37965e1b2ab6d291d.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.f20ca3e4.chunk.css.map": "/static/css/main.f20ca3e4.chunk.css.map",
+    "static/js/2.488af163.chunk.js.LICENSE.txt": "/static/js/2.488af163.chunk.js.LICENSE.txt",
+    "static/media/SideBar.css": "/static/media/profile.438e1c2a.jpg",
+    "static/media/road.jpg": "/static/media/road.caec1cfd.jpg",
+    "static/media/windTurbine.jpg": "/static/media/windTurbine.2c98325f.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.05d509f8.js",
+    "static/js/2.488af163.chunk.js",
+    "static/css/main.f20ca3e4.chunk.css",
+    "static/js/main.57c53aaa.chunk.js"
+  ]
+}
