@@ -42,6 +42,7 @@ html, body {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--headfont);
+  margin-bottom: 0.5rem;
 }
 
 h1 { font-size: 3.0rem; }
@@ -60,10 +61,6 @@ section {
   padding: 3rem 1.5rem;
 }
 
-#Hero {
-  height: 100vh;
-}
-
-#Main-Content {
-  overflow: hidden scroll;
+ul, ol {
+  margin-left: 1rem;
 }
