@@ -47,7 +47,7 @@ function TimeLineSection() {
       <Timeline>
         <TimelineItem icon={faPlus} date="28/04/2020">
           <h4>Bristol PLUS Award</h4>
-          <p>Achived for demonstrating gained employability skills and taking part in extra-curricular activities to help prepare me for my future career.</p>
+          <p>Achieved for demonstrating gained employability skills and taking part in extra-curricular activities to help prepare me for my future career.</p>
           <a href="https://bristol.ac.uk/careers/bristol-plus-award/">Find out more</a>
         </TimelineItem>
         <TimelineItem icon={faEgg} date="22/11/2019">
@@ -63,24 +63,24 @@ function TimeLineSection() {
             <li>Rebuilt and designed the <a href="https://cssbristol.co.uk/events">events page</a></li>
             <li>Rebuilt and designed the <a href="https://cssbristol.co.uk/tutorials">tutorials page</a></li>
             <li>Rebuilt and designed the <a href="https://cssbristol.co.uk/">home page content</a></li>
-            <li>Implemnted generation of an ICalander file of events</li>
+            <li>Implemented generation of an ICalander file of events</li>
             <li>Kept events and job postings up to date</li>
-            <li>Continued with various Press officer responsiblities: making banners, and advertiting</li>
+            <li>Continued with various Press officer responsibilities: making banners, and advertising</li>
           </ul>
         </TimelineItem>
         <TimelineItem icon={faIdBadge} date="24/06/2019 - 14/09/2019">
           <h4>Internship @ BAE Systems AI</h4>
           <p>Summer internship between years 1 and 2 as an <em>Operational Cyber Software Engineer</em></p>
-          <p>Notable achivements:</p>
+          <p>Notable achievements:</p>
           <ul>
             <li>Working as a team to produces a business pitch to solve IoT security</li>
-            <li>Appart of the winning team in the CTF</li>
+            <li>Apart of the winning team in the CTF</li>
             <li>Delivering a project involving python, and gstreamer</li>
           </ul>
         </TimelineItem>
         <TimelineItem icon={faNewspaper} date="16/11/2018">
           <h4>Press Officer at CSS</h4>
-          <p>I became the press officer in my first year of university with responsiblities including:</p>
+          <p>I became the press officer in my first year of university with responsibilities including:</p>
           <ul>
             <li>Creating newsletters</li>
             <li>Creating event banners</li>
@@ -100,7 +100,7 @@ function TimeLineSection() {
             <li>A  Further Maths</li>
             <li>B  Physics</li>
           </ul>
-          <p>Achived 14 GCSEs including A* Maths and A English</p>
+          <p>Achieved 14 GCSEs including A* Maths and A English</p>
         </TimelineItem>
       </Timeline>
     </section>
