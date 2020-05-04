@@ -45,6 +45,10 @@ function TimeLineSection() {
     <section id="Time-Line-Section">
       <h3>The story so far...</h3>
       <Timeline>
+        <TimelineItem icon={["fab", "css3-alt"]} date="03/05/2020">
+          <h4>CSS Webmaster</h4>
+          <p>I was re-elected as the webmaster for the Computer Science Society</p>
+        </TimelineItem>
         <TimelineItem icon={faPlus} date="28/04/2020">
           <h4>Bristol PLUS Award</h4>
           <p>Achieved for demonstrating gained employability skills and taking part in extra-curricular activities to help prepare me for my future career.</p>
