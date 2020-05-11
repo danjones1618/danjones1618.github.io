@@ -34,7 +34,7 @@ function Socials() {
 function NavBar() {
   return (
     <nav>
-      <h6>// TODO implement navigation</h6>
+      <h1>This will be the nav</h1>
     </nav>
   );
 }

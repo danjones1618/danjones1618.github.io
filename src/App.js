@@ -1,12 +1,12 @@
-import React, { useState } from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { library } from '@fortawesome/fontawesome-svg-core';
-import { fab } from '@fortawesome/free-brands-svg-icons';
-import { far } from '@fortawesome/free-regular-svg-icons';
+import React from 'react';
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { fab } from '@fortawesome/free-brands-svg-icons'
+import { far } from '@fortawesome/free-regular-svg-icons'
 import {
   faEnvelope,
   faSquare,
   faUniversity,
+<<<<<<< HEAD
   faSchool,
   faNewspaper,
   faIdBadge,
@@ -14,6 +14,9 @@ import {
   faEgg,
   faPlus,
   faChalkboardTeacher,
+=======
+  faSchool
+>>>>>>> parent of e7a99b1... Update timeline and add dates
 } from '@fortawesome/free-solid-svg-icons'
 import SideBar from './SideBar.js';
 import Carosell from './Carosell.js';
@@ -23,8 +26,12 @@ import './App.css';
 import road from './res/road.jpg';
 import turbine from './res/windTurbine.jpg';
 
+<<<<<<< HEAD
 library.add(far, fab, faEnvelope, faSquare, faUniversity, faSchool,
   faNewspaper, faIdBadge, faArrowLeft, faEgg, faPlus, faChalkboardTeacher);
+=======
+library.add(far, fab, faEnvelope, faSquare, faUniversity, faSchool);
+>>>>>>> parent of e7a99b1... Update timeline and add dates
 
 function HomeSlide() {
   return (
@@ -52,8 +59,9 @@ function SkillsHighlight() {
 function TimeLineSection() {
   return (
     <section id="Time-Line-Section">
-      <h3>The story so far...</h3>
+      <h3>The story so far..</h3>
       <Timeline>
+<<<<<<< HEAD
         <TimelineItem icon={["fab", "css3-alt"]} date="03/05/2020">
           <h4>CSS Webmaster</h4>
           <p>I was re-elected as the webmaster for the Computer Science Society</p>
@@ -118,6 +126,19 @@ function TimeLineSection() {
             <li>B  Physics</li>
           </ul>
           <p>Achieved 14 GCSEs including A* Maths and A English</p>
+=======
+        <TimelineItem icon={faEnvelope}>
+          <h1>hello</h1>
+        </TimelineItem>
+        <TimelineItem icon={faEnvelope}>
+          <h1>Wow</h1>
+        </TimelineItem>
+        <TimelineItem icon={faUniversity}>
+          <h1>hello</h1>
+        </TimelineItem>
+        <TimelineItem icon={faSchool}>
+          <h1>Wow</h1>
+>>>>>>> parent of e7a99b1... Update timeline and add dates
         </TimelineItem>
       </Timeline>
     </section>
@@ -125,16 +146,15 @@ function TimeLineSection() {
 }
 
 function App() {
-  const [navOpen, setNav] = useState(true);
   return (
-    <div id="Main" className={navOpen ? "" : "hide-nav"}>
-      <FontAwesomeIcon id="menu-btn" icon={faArrowLeft} onClick={() => setNav(!navOpen)}/>
+    <>
       <SideBar/>
       <article id="Main-Content">
         <HomeSlide/>
         <TimeLineSection/>
       </article>
-    </div>
+    </>
   );
 }
+
 export default App;
