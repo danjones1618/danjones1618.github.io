@@ -7,6 +7,9 @@ export function TimelineItem(props) {
     <div className="timeline-item-wrapper">
       <div className="timeline-item">
         {props.children}
+        <span className="timeline-item-date">
+          {props.date}
+        </span>
       </div>
       <FontAwesomeIcon className="timeline-icon" icon={props.icon} listItem/>
     </div>

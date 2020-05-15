@@ -1,8 +1,38 @@
-#root {
+#Main {
   width: 100vw;
   height: 100vh;
   display: grid;
   grid-template-columns: 300px 1fr;
   grid-template-rows: 1fr;
+  transition: all 0.25s ease-in-out;
 }
 
+#menu-btn {
+  position: fixed;
+  top: 0;
+  left: calc(300px - 3.5rem);
+  color: var(--white);
+  font-size: 1.5rem;
+  padding: 1rem;
+  cursor: pointer;
+  z-index: 9999;
+  transition: transform 0.25s ease-in-out 0s, left 0.25s ease-in-out 0.25s;
+}
+
+.hide-nav #menu-btn {
+  transform: rotate(180deg);
+  padding-left: calc(100vw - 3rem);
+}
+
+.hide-nav {
+  width: calc(100vw + 300px - 3.5rem) !important;
+  transform: translateX(calc(-300px + 3.5rem));
+}
+
+#Hero {
+  height: 100vh;
+}
+
+#Main-Content {
+  overflow: hidden scroll;
+}

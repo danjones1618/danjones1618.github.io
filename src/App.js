@@ -1,7 +1,8 @@
-import React from 'react';
-import { library } from '@fortawesome/fontawesome-svg-core'
-import { fab } from '@fortawesome/free-brands-svg-icons'
-import { far } from '@fortawesome/free-regular-svg-icons'
+import React, { useState } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { fab } from '@fortawesome/free-brands-svg-icons';
+import { far } from '@fortawesome/free-regular-svg-icons';
 import {
   faEnvelope,
   faSquare,
@@ -51,7 +52,7 @@ function SkillsHighlight() {
 function TimeLineSection() {
   return (
     <section id="Time-Line-Section">
-      <h3>The story so far..</h3>
+      <h3>The story so far...</h3>
       <Timeline>
         <TimelineItem icon={["fab", "css3-alt"]} date="03/05/2020">
           <h4>CSS Webmaster</h4>
@@ -124,15 +125,16 @@ function TimeLineSection() {
 }
 
 function App() {
+  const [navOpen, setNav] = useState(true);
   return (
-    <>
+    <div id="Main" className={navOpen ? "" : "hide-nav"}>
+      <FontAwesomeIcon id="menu-btn" icon={faArrowLeft} onClick={() => setNav(!navOpen)}/>
       <SideBar/>
       <article id="Main-Content">
         <HomeSlide/>
         <TimeLineSection/>
       </article>
-    </>
+    </div>
   );
 }
-
 export default App;
