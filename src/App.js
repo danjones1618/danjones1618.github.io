@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import useAckee from 'use-ackee';
+import { useLocation } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { fab } from '@fortawesome/free-brands-svg-icons';
@@ -16,8 +18,9 @@ import {
   faChalkboardTeacher,
 } from '@fortawesome/free-solid-svg-icons'
 import SideBar from './SideBar.js';
-import Carosell from './Carosell.js';
-import { Timeline, TimelineItem } from './Timeline.js';
+import Carosell from './Components/Carosell.js';
+import { Timeline, TimelineItem } from './Components/Timeline.js';
+import Project from './Components/ProjectCard.js';
 import './App.css';
 
 import road from './res/road.jpg';
@@ -126,12 +129,21 @@ function TimeLineSection() {
 
 function App() {
   const [navOpen, setNav] = useState(true);
+  const location = useLocation();
+  useAckee(location.pathname, {
+    server: 'https://ackee.icedcoffee.dev',
+    domainId: 'e7e64cd0-494a-42a9-9e1c-c6ec03d11f81',
+  }, {
+    ignoreLocalhost: true,
+  });
+
   return (
     <div id="Main" className={navOpen ? "" : "hide-nav"}>
       <FontAwesomeIcon id="menu-btn" icon={faArrowLeft} onClick={() => setNav(!navOpen)}/>
       <SideBar/>
       <article id="Main-Content">
         <HomeSlide/>
+        <Project name="LiDAR" langages={["react.js", "spring boot", "agile", "python", "flask"]}/>
         <TimeLineSection/>
       </article>
     </div>
