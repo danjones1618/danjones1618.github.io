@@ -53,7 +53,7 @@ function TimeLineSection() {
         </TimelineItem>
         <TimelineItem icon={faRocket} date="06/08/2020 - 02/10/2020">
           <h4>Web Developer @ spin-up.science</h4>
-          <p>Worked on the MVP of <a href="protolyst.org">protolyst</a>, a learning platform and ideation tool set centred around early stage start up market research and planning.</p>
+          <p>Worked on the MVP of <a href="https://protolyst.org">protolyst</a>, a learning platform and ideation tool set centred around early stage start up market research and planning.</p>
         </TimelineItem>
         <TimelineItem icon={["fab", "css3-alt"]} date="03/05/2020">
           <h4>CSS Webmaster</h4>
