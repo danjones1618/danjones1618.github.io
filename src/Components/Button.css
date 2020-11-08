@@ -1,0 +1,21 @@
+.button {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: var(--salmon);
+  border: 2px solid var(--white);
+  box-shadow: 0px 0px 0px 4px var(--salmon);
+  font-family: var(--headfont);
+  transition: all ease-out 0.2s;
+  cursor: pointer;
+  margin: 4px;
+  border-radius: 5px;
+  color: var(--white);
+  text-decoration: none;
+}
+
+.button:hover, .button:focus {
+  background-color: var(--gray);
+  color: var(--white);
+  box-shadow: 0px 10px 10px var(--shadow);
+  transform: translateY(-1px) scale(1.02);
+}

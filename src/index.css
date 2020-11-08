@@ -1,8 +1,9 @@
-@import url('https://fonts.googleapis.com/css?family=Fira+Sans|Oxygen:300,400&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans|Oxygen:300,400|Oxygen+Mono&display=swap');
 
 :root {
   --headfont: 'Fira Sans', sans-serif;
   --bodyfont: 'Oxygen', sans-serif;
+  --monofont: 'Oxygen Mono', source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
   --white: #ffffff;
   --offwhite: #f9f9fc;
   --darkgray: #1b1d1e;
@@ -54,8 +55,7 @@ h5 { font-size: 1.0rem; }
 h6 { font-size: 0.5rem; }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: var(--monofont);
 }
 
 section {

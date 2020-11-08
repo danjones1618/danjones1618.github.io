@@ -1,0 +1,78 @@
+.CVPage {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+}
+
+.CV {
+  margin-top: -250px;
+  margin-bottom: 50px;
+}
+
+.CV > * {
+  box-shadow: 0px 0px 10px var(--shadow);
+}
+
+.CV .pages {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: calc(5% + 150px);
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--white);
+  opacity: 0;
+  transition: opacity ease 0.5s;
+  font-family: var(--monofont);
+}
+
+.CV:hover .pages{
+  opacity: 1;
+  color: var(--gray);
+}
+
+.CV .pages span {
+  margin: 0 0.5rem;
+}
+
+.CV .pages .page-btn {
+  font-size: 0.5rem;
+  padding: 0.75rem 1rem;
+  transition: background-color ease 0.2s;
+}
+
+.CV .pages .page-btn:hover {
+  background-color: var(--shadow);
+}
+
+.CV .pages .page-btn:hover.disabled {
+  background-color: var(--white);
+}
+
+.CV .pages .page-btn.disabled {
+  color: var(--shadow);
+}
+
+.CVPage .topcol {
+  background-color: var(--salmon);
+  height: 400px;
+  width: 100%;
+}
+
+.CVPage .download {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 25px;
+}
+
+.CVPage .download span a {
+  margin-left: 0.55ch;
+}

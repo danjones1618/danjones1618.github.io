@@ -1,0 +1,6 @@
+.ProjectCard {
+  padding: 1rem 0.5rem;
+  border-radius: var(--radius);
+  box-shadow: 0px 0px 10px var(--shadow);
+  background-color: var(--white);
+}
