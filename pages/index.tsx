@@ -1,3 +1,4 @@
+import {  GetStaticProps } from 'next';
 import Head from 'next/head';
 import Link from 'next/link';
 import { getSortedProjectsData } from '../lib/projects';
@@ -38,7 +39,7 @@ export default function Home({ projects }) {
   );
 }
 
-export async function getStaticProps() {
+export const getStaticProps: GetStaticProps = () => {
   const projects = getSortedProjectsData();
   return {
     props: {

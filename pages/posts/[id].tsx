@@ -1,3 +1,4 @@
+import { GetStaticProps, GetStaticPaths } from 'next';
 import Head from 'next/head';
 import Link from 'next/link';
 import Layout from '../../components/layouts/project';
@@ -22,8 +23,8 @@ export default function Project({ project }) {
   );
 }
 
-export async function getStaticProps({ params }) {
-  const project = await getProject(params.id);
+export const getStaticProps: GetStaticProps = async ({ params }) => {
+  const project = await getProject(params.id as string);
   return {
     props: {
       project,
@@ -31,7 +32,7 @@ export async function getStaticProps({ params }) {
   };
 }
 
-export async function getStaticPaths() {
+export const getStaticPaths: GetStaticPaths = async () => {
   const paths = getAllProjectIds();
   return {
     paths,

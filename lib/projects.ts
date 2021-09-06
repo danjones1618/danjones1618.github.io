@@ -6,11 +6,16 @@ import html from "remark-html";
 
 const projectDir = path.join(process.cwd(), "projects");
 
-const getIdFromFileName = (f) => f.replace(/\.mdx?$/, '');
+const getIdFromFileName = (f: string) => f.replace(/\.mdx?$/, '');
+
+export interface ProjectsFrontMatter {
+  title: string,
+  date: Date,
+}
 
 export function getSortedProjectsData() {
   const fileNames = fs.readdirSync(projectDir);
-  const allProjectsData = fileNames.map(fname => {
+  const allProjectsData = fileNames.map((fname) => {
     const id = getIdFromFileName(fname);
 
     const fullPath = path.join(projectDir, fname);
@@ -20,7 +25,7 @@ export function getSortedProjectsData() {
 
     return {
       id,
-      ...matterResult.data
+      ...matterResult.data as ProjectsFrontMatter
     }
   });
 
@@ -33,7 +38,12 @@ export function getSortedProjectsData() {
   );
 }
 
-export async function getProject(id) {
+export interface Project extends ProjectsFrontMatter {
+  id: string,
+  contentHtml: string,
+}
+
+export async function getProject(id: string) : Promise<Project> {
   const fullPath = path.join(projectDir, `${id}.md`);
   const data = fs.readFileSync(fullPath, 'utf8');
   const matterResult = matter(data);
@@ -46,7 +56,7 @@ export async function getProject(id) {
   return {
     id,
     contentHtml,
-    ...matterResult.data
+    ...matterResult.data as ProjectsFrontMatter
   };
 }
 
