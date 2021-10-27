@@ -33,9 +33,9 @@ h1 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 1em;
+  gap: 2em;
   list-style-type: none;
-  margin: 1em;
+  margin: 2em;
   padding: 0;
 }
 
@@ -43,7 +43,7 @@ h1 {
   color: var(--fg-color);
   font-weight: 600;
   background-color: #1d1b1eaa;
-  padding: 0.25em 1em;
+  padding: 0.5em 1em;
   border-radius: 5px;
   border: 2px solid var(--fg-color);
   text-decoration: none;
